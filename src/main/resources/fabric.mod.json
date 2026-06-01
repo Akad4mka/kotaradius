@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "kotaradius",
+	"version": "${version}",
+	"name": "KotaRadius",
+	"description": "Визуализация радиуса предметов FunTime\n\nПоказывает точную зону действия и радиус серверных предметов FunTime.\n\nНастройки мода открываются на Y (в настройках майнкрафта можно изменить)\n\nСделано учениками Kota Academy (@kotaacademy)",
+	"authors": [
+		"Akad4mka"
+	],
+	"contact": {
+	},
+	"license": "EULA",
+	"icon": "assets/kotaradius/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.arm.ArmSubjectArea"
+		],
+		"fabric-datagen": [
+			"net.arm.ArmSubjectAreaDataGenerator"
+		],
+        "client": ["net.arm.client.AreaClient"]
+	},
+	"mixins": [
+		"kotaradius.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.25",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
